@@ -1,6 +1,5 @@
 package com.yxgj.yxweb.controller;
 
-import com.sun.org.apache.xpath.internal.operations.Mod;
 import com.yxgj.yxweb.pojo.AboutUs;
 import com.yxgj.yxweb.pojo.ManInfo;
 import com.yxgj.yxweb.repository.AboutUsRepository;
@@ -59,13 +58,14 @@ public class HeadController {
 
 
     @RequestMapping("/pic/upload/head-img")
+    @ResponseBody
     public String headSetting(@RequestParam("file") MultipartFile uploadFile,
                               HttpServletRequest request,
                               @RequestParam("allPath") String allPath) {
         allPath = request.getSession().getServletContext().getRealPath("system") + allPath;
         System.out.println(allPath);
         SaveFile.save(allPath, uploadFile);
-        return "redirect:/manager";
+        return "ok";
 
     }
 

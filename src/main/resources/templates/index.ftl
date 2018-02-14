@@ -214,7 +214,7 @@
                 ${productInfo9.smallTitle}
                 </div>
             </a>
-
+<#--
             <a class="project-item masonry-brick" data-images="/system/comfy/cms/files/files/000/000/124/original/16-1.jpg,/system/comfy/cms/files/files/000/000/125/original/16-2.jpg,/system/comfy/cms/files/files/000/000/126/original/16-3.jpg">
                 <img class="img-responsive project-image" src="system/comfy/cms/files/files/000/000/127/original/16.jpg" alt="">
                 <div class="hover-mask">
@@ -279,7 +279,7 @@
                 <div class="sr-only project-description">
                 ${productInfo15.smallTitle}
                 </div>
-            </a>
+            </a>-->
 
 
         </div>
